@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ventana" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ventasR.Controller.RegistroClienteNaturalController">
+    <children>
+        <Label layoutX="283.0" layoutY="26.0" text="Registro Clientes Naturales">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtNombre" layoutX="187.0" layoutY="126.0" />
+        <TextField fx:id="txtApellido" layoutX="187.0" layoutY="173.0" />
+        <TextField fx:id="txtIdentificacion" layoutX="187.0" layoutY="224.0" />
+        <Label layoutX="94.0" layoutY="130.0" text="Nombre:" />
+        <Label layoutX="94.0" layoutY="177.0" text="Apellido:" />
+        <Label layoutX="94.0" layoutY="228.0" text="Identificacion:" />
+        <Label layoutX="94.0" layoutY="280.0" text="Direccion:" />
+        <Label layoutX="96.0" layoutY="329.0" text="Telefono:" />
+        <Label layoutX="238.0" layoutY="345.0" />
+        <TextField fx:id="txtDireccion" layoutX="187.0" layoutY="276.0" />
+        <Label layoutX="102.0" layoutY="384.0" text="Email:" />
+        <Label layoutX="82.0" layoutY="435.0" text="Fecha Nacimiento:" />
+        <TextField fx:id="txtTelefono" layoutX="187.0" layoutY="325.0" />
+        <TextField fx:id="txtEmail" layoutX="187.0" layoutY="380.0" />
+        <DatePicker fx:id="dateFechaN" layoutX="187.0" layoutY="431.0" prefHeight="25.0" prefWidth="163.0" />
+        <Button fx:id="btnRegistrarCliente" layoutX="187.0" layoutY="491.0" mnemonicParsing="false" onAction="#registrarClienteEvent" text="Registrar" />
+        <Button fx:id="btnEliminarCliente" layoutX="627.0" layoutY="431.0" mnemonicParsing="false" onAction="#eliminarClienteEvent" style="-fx-background-color: #jjj000;" text="Eliminar" />
+        <Button fx:id="btnActualizarCliente" layoutX="470.0" layoutY="431.0" mnemonicParsing="false" onAction="#actualizarClienteEvent" text="Actualizar" />
+        <Button fx:id="btnVentas" layoutX="700.0" layoutY="542.0" mnemonicParsing="false" onAction="#ventasEvent" text="Ir a Ventas" />
+      <TableView fx:id="tabClientesNaturales" layoutX="470.0" layoutY="139.0" prefHeight="249.0" prefWidth="239.0">
+        <columns>
+          <TableColumn fx:id="columNombre" prefWidth="75.0" text="Nombre" />
+          <TableColumn fx:id="columId" prefWidth="88.0" text="Identificacion" />
+            <TableColumn fx:id="columEmail" prefWidth="75.0" text="Email" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnAtras" layoutX="30.0" layoutY="555.0" mnemonicParsing="false" onAction="#atrasEvent" text="Atras" />
+    </children>
+</AnchorPane>

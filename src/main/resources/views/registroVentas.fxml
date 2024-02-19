@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="ventana" prefHeight="600.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ventasR.Controller.RegistroVentasController">
+   <children>
+      <Label layoutX="259.0" layoutY="25.0" text="Registro Ventas" />
+      <Label layoutX="161.0" layoutY="76.0" text="Codigo:" />
+      <Label layoutX="159.0" layoutY="123.0" text="Nombre:" />
+      <Label layoutX="150.0" layoutY="172.0" text="Descripcion:" />
+      <Label layoutX="145.0" layoutY="216.0" text="Valor unitario:" />
+      <Label layoutX="121.0" layoutY="255.0" text="Cantidad en existencia:" />
+      <TextField fx:id="txtCodigo" layoutX="259.0" layoutY="72.0" />
+      <TextField fx:id="txtNombre" layoutX="259.0" layoutY="119.0" />
+      <TextField fx:id="txtDescripcion" layoutX="259.0" layoutY="168.0" />
+      <TextField fx:id="txtValorUnitario" layoutX="259.0" layoutY="212.0" />
+      <TextField fx:id="txtCantidadExistencia" layoutX="259.0" layoutY="251.0" />
+      <Button fx:id="btnAtras" layoutX="33.0" layoutY="543.0" mnemonicParsing="false" onAction="#atrasEvent" text="Atras" />
+      <TableView fx:id="tblVentas" layoutX="113.0" layoutY="356.0" onMouseClicked="#seleccionarVenta" prefHeight="200.0" prefWidth="458.0">
+        <columns>
+          <TableColumn fx:id="colCodigo" prefWidth="86.3999252319336" text="Codigo" />
+          <TableColumn fx:id="colNombre" prefWidth="80.800048828125" text="Nombre" />
+            <TableColumn fx:id="colDescripcion" prefWidth="124.0" text="Descripcion" />
+            <TableColumn fx:id="colValorUnitario" prefWidth="80.79998779296875" text="Valor Unitario" />
+            <TableColumn fx:id="colCantidadExistencia" prefWidth="88.80001831054688" text="Cantidad Exis" />
+        </columns>
+      </TableView>
+      <Button layoutX="174.0" layoutY="300.0" mnemonicParsing="false" onAction="#registrarVenta" text="Registrar" />
+      <Button layoutX="308.0" layoutY="300.0" mnemonicParsing="false" onAction="#eliminarVenta" prefHeight="26.0" prefWidth="65.0" text="Eliminar" />
+   </children>
+</AnchorPane>

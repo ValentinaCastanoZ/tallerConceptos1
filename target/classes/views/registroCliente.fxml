@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ventana" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ventasR.Controller.RegistroClientesController">
+   <children>
+      <Label layoutX="249.0" layoutY="57.0" text="Seleccione el tipo de cliente que desea registrar">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnClienteNatural" layoutX="220.0" layoutY="267.0" mnemonicParsing="false" onAction="#clienteNaturalEvent" prefHeight="79.0" prefWidth="118.0" text="Cliente Natural" />
+      <Button fx:id="btnAtras" layoutX="33.0" layoutY="541.0" mnemonicParsing="false" onAction="#atrasEvent" text="Atras" />
+      <Button fx:id="btnClienteJuridico" layoutX="453.0" layoutY="267.0" mnemonicParsing="false" onAction="#clienteJuridicoEvent" prefHeight="79.0" prefWidth="118.0" text="Cliente Juridico" />
+   </children>
+</AnchorPane>
